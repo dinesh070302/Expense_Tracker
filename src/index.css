@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+
+body {
+  margin: 0;
+  background-color:#2E0249;
+  font-family: Poppins;
+}
+
+.container{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+ }
+ .header{
+  font-weight: 500;
+  font-size: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  margin-left: 20px;
+ }
+
+ .btn {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+}
+.btn:focus {
+  outline: none;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+.btn:hover {
+  background-color: red;
+}
+.options{
+  display: flex;
+  flex-direction: column;
+
+}
+label{
+  text-align: left;
+  font-weight: 400;
+  font-size: 15px;
+  margin:10px 0 10px 5px;
+}
+input{
+  padding:10px;
+  width: 90%;
+  margin-left: 5px;
+}
+.addexp{
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 20px 5px 5px;
+  width:98%;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+}
+.addexp:focus {
+  outline: none;
+}
+
+.addexp:active {
+  transform: scale(0.98);
+}
+
+.addexp-block {
+  display: block;
+  width: 100%;
+}
+.addexp:hover {
+  background-color: red;
+}
+
+ .row{
+	margin-top: 1%;
+	display: flex;
+	justify-content: space-between;
+}
+.card{
+  border: 1px solid black;
+	flex-basis: 45%;
+	background:#5B4B8A;
+  color: white;
+ 	border-radius: 15px;
+ 	margin-bottom: 5%;
+ 	padding: 20px 12px;
+ 	box-sizing: border-box;
+}
+.card-1{
+  height:500px;
+}
+.allexpense{
+  margin-top:100px;
+  text-align: center;
+}
+.card-2{
+    overflow-y: auto;
+    height: 550px;
+    width:3px;
+}
+.card-header{
+  margin: 5% ;
+}
+.card-header-1 {
+  float: left;
+  font-weight: 400;
+  font-size: 18px;
+  
+}
+.card-header-2 {
+  float: right;
+  font-weight: 400;
+  font-size: 18px;
+  
+}
+.expense-list{
+  display:flex;
+  flex-direction: column;
+}
+.yearmenu{
+  font-family: Poppins;
+  text-align: center;
+  padding: 8px;
+  font-weight:400;
+  font-size:18px;
+  border-radius: 5px;
+  margin: 0;
+}
+
+ul{
+  text-align: left;
+  list-style: none;
+}
+ul li{
+  list-style: none;
+  text-align: left;
+  cursor:pointer;
+}
+ul li ul li{
+  display: none;
+  text-align: center;
+  background: #000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+  cursor: pointer;
+  width: 8%;
+}
+ul li:hover ul li{
+  display: inline-block;
+}
+ul li ul li:focus {
+  outline: none;
+}
+
+ul li ul li:active {
+  transform: scale(0.98);
+}
+
+ul li ul li-block {
+  display: block;
+  width: 100%;
+}
+ul li ul li:hover {
+  background-color: red;
+}
+
+.cell{
+  color:black;
+  display: flex;
+  background: #f4f4f4;
+  flex-direction: row;
+  padding : 10px 15px;
+  margin:5px;
+  font-size : 15px;
+  border-radius:8px;
+  align-items:center;
+  font-weight:450 ;
+  justify-content:space-between; 
+  border-right: 4px solid red;
+}
+.delete{
+  background: #000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+  cursor: pointer;
+}
+.delete:focus {
+  outline: none;
+}
+
+.delete:active {
+  transform: scale(0.98);
+}
+
+.delete-block {
+  display: block;
+  width: 100%;
+}
+.delete:hover {
+  background-color: red;
+}
+.span1{
+  width:25%;
+  text-align: left;
+}
+.span2{
+  width:30%;
+  text-align: left;
+}
+.span3{
+  width:15%;
+  text-align: left;
+}
+.should{
+  display:none;
+}
+.spacing{
+  margin:60px 0 0;
+}
+#cars{
+  padding: 5px;
+  width:100px;
+  text-align: center;
+}
