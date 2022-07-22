@@ -1,9 +1,7 @@
 import './index.css';
-import Addexp from './Exp';
 import Explist from './Explist';
 import { useEffect, useState } from 'react';
 import AddExpense from './AddExpense';
-import DropDownMenu from './DropdownMenu.js'
 import Table from './table';
 
 //Structure of the Page
