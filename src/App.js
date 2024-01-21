@@ -2,7 +2,6 @@ import './index.css';
 import Explist from './Explist';
 import { useEffect, useState } from 'react';
 import AddExpense from './AddExpense';
-import Table from './table';
 
 //Structure of the Page
 //Two Cards
