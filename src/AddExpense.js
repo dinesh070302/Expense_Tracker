@@ -1,11 +1,6 @@
-import { useEffect, useState } from "react";
-import { FaDAndD } from "react-icons/fa";
+import { useState } from "react";
 
-
-
-
-
-const AddExpense =  ({normal,expenses,addExpense,addExp,toggleAddExp,updateYearArray,yearArray,filteredArray,setFilteredArray}) => {
+const AddExpense =  ({addExpense,addExp,toggleAddExp,updateYearArray}) => {
 
 
         const [title,setTitle] = useState('');

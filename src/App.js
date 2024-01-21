@@ -29,13 +29,10 @@ const App = () => {
         year  : '2023-08-02'
     }
 ])
-const [real,setReal] =useState(expenses);
 let [unique, setyearArray] = useState(['2021','2022','2023']);
 
-let [year,setYearArray] = useState([]);
-
 const deleteExpense = (id) =>{
-  setExpenses(expenses.filter((expense) => expense.id != id))
+  setExpenses(expenses.filter((expense) => expense.id !== id))
 }
  const [addExp, toggleAddExp]=useState(false);
 
@@ -43,7 +40,6 @@ const deleteExpense = (id) =>{
   const expenseArray =[...expenses];
   expenseArray.push(payload);
   setExpenses(expenseArray);  
-  // setReal(expenseArray);
   }
 
 
@@ -56,12 +52,7 @@ const deleteExpense = (id) =>{
     console.log(unique);
    setyearArray(unique);
 
-  //  var myArray = ['a', 1, 'a', 2, '1'];
-    // unique is ['a', 1, 2, '1'] 
  }
-//  useEffect(())
-//  useEffect(() => ddd)
-//  const [thisYear,]
 
 useEffect(()=> normal(),[expenses]);
 const[filteredArray,setFilteredArray] = useState(expenses);
@@ -83,7 +74,6 @@ const normal = () =>{
             {addExp ? "Cancel" : "Add New Expense"}</button>
          </div>
         {!addExp && <button  className='btn allexpense' key={'text'} onClick={() => normal()}>View All Expenses</button>}
-        {/* {!addExp && <Table  expenses={expenses}/>} */}
 
             {addExp && <AddExpense   addExp={addExp} toggleAddExp={toggleAddExp} expenses={expenses} updateYearArray ={ddd} yearArray ={unique} addExpense={updateExpArray} setFilteredArray={setFilteredArray} filteredArray={filteredArray} normal={normal}/>}
            
@@ -109,6 +99,3 @@ const normal = () =>{
 }
 
 export default App;
-//need to make a dropdown using the unique years that are there
-
-//array to store dates

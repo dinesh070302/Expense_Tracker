@@ -1,16 +1,13 @@
 import './index.css';
-import { useState } from 'react';
 import Exp from './Exp';
 
-const Explist = ({expenses,onDelete,unique,filters}) => {
+const Explist = ({expenses,onDelete}) => {
     let amount = 0;
-    // let updatedarray = [...expenses];
-    // updatedarray = updatedarray.filter( (payload) =>)
     const calculate = () =>{
         expenses.map((item) => 
                 {amount=amount+item.amount}
             )
-            return amount;
+        return amount;
     }
     return ( 
         

@@ -1,7 +1,4 @@
 import './index.css';
-import {useState,useEffect} from 'react';
-import Explist from './Explist';
-import {FaTimes} from 'react-icons/fa'
 
 const Exp = ({expense,onDelete}) =>  {
 
