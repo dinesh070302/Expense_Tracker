@@ -84,7 +84,7 @@ const normal = () =>{
             {addExp ? "Cancel" : "Add New Expense"}</button>
          </div>
         {!addExp && <button  className='btn allexpense' key={'text'} onClick={() => normal()}>View All Expenses</button>}
-        {!addExp && <Table  expenses={expenses}/>}
+        {/* {!addExp && <Table  expenses={expenses}/>} */}
 
             {addExp && <AddExpense   addExp={addExp} toggleAddExp={toggleAddExp} expenses={expenses} updateYearArray ={ddd} yearArray ={unique} addExpense={updateExpArray} setFilteredArray={setFilteredArray} filteredArray={filteredArray} normal={normal}/>}
            
